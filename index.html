@@ -23,8 +23,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="image/logo.png" alt=""></a>
-            <div class="nav-links">
-                <img src="image/cancel.png" class="icon" style="width: 35px;" alt="">
+            <div class="nav-links" id="navlinks">
+                <img src="image/cancel.png" onclick="hidemenu()" class="icon" style="width: 35px;" alt="">
 
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -34,7 +34,7 @@
                     <li><a href="index.html">CONTACT</a></li>
                 </ul>
             </div>
-            <img src="image/list.png" class="icon" style="width: 35px;" alt="">
+            <img src="image/list.png" class="icon" onclick="showmenu()" style="width: 35px;" alt="">
         </nav>
 
         <div class="text-box">
@@ -46,6 +46,48 @@
         </div>
 
     </section>
+
+
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo quaerat possimus in omnis facilis at,
+            voluptas aspernatur ex nostrum totam aperiam itaque. Consectetur nam nesciunt fugit omnis, culpa natus.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, fugit dicta suscipit ducimus beatae
+                    sunt ipsum dolores reprehenderit delectus quasi, perferendis sit quae non eos omnis culpa laborum
+                    sint unde!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, fugit dicta suscipit ducimus beatae
+                    sunt ipsum dolores reprehenderit delectus quasi, perferendis sit quae non eos omnis culpa laborum
+                    sint unde!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, fugit dicta suscipit ducimus beatae
+                    sunt ipsum dolores reprehenderit delectus quasi, perferendis sit quae non eos omnis culpa laborum
+                    sint unde!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks")
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
 
 </body>
 
